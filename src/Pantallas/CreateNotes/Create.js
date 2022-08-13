@@ -34,7 +34,7 @@ const Create = () => {
         console.log(title,description,image);
         try {
             const {data} = await axios.post('https://backend-photos.herokuapp.com/api/mynotes/create', 
-            {title, description, image}
+            {title, description, image}, config
         
             )
             if  (data.success === true){
@@ -56,7 +56,7 @@ const Create = () => {
   return (
    <>
      <div className="container custom_class">
-        <h2 className="signup_title ">CREATE PRODUCT</h2>
+        <h2 className="signup_title ">CREATE MEMORY</h2>
         <form className=" col-sm-6 offset-3 pt-5 signup_form " enctype="multipart/form-data" onSubmit={submitForm}>
             
             <div className="form-outline mb-4">
