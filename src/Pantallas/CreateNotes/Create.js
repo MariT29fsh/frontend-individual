@@ -33,7 +33,7 @@ const Create = () => {
         }
         console.log(title,description,image);
         try {
-            const {data} = await axios.post('http://localhost:3001/api/mynotes/create', 
+            const {data} = await axios.post('https://backend-photos.herokuapp.com/api/mynotes/create', 
             {title, description, image}
         
             )
