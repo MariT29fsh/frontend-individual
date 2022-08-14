@@ -42,7 +42,8 @@ const Create = () => {
                 setDescription('');
                 setImage('');
                 toast.success('product created successfully')
-                navigate('/mybook');
+                //navigate('/mybook');
+                navigate('/home');
             }
             console.log(data);
         } catch (error) {
