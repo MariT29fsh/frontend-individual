@@ -65,7 +65,8 @@ const Home = () => {
                                     <Card
                                     image={p.image.url}
                                     productTitle={p.title} 
-                                     prodLink={`/product/${p._id}`} 
+                                    prodLink={p._id}
+                                     //prodLink={`/product/${p._id}`} 
                                      prodDescrip={p.description}/>
                                      
                                 )) 
