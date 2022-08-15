@@ -19,7 +19,9 @@ const Home = () => {
         try{
             const data = await axios.get('https://backend-photos.herokuapp.com/api/mynotes/all');
             //const data  =await res.json();
+            const response= await data.response;
             console.log(data);
+            console.log(response)
             setProducts(data);
         }
         /*.then((prods)=>{
