@@ -12,10 +12,10 @@ const Unique = (p) => {
     const { id } = useParams();
 
 
-    const fetchProduct =async () =>{
+    const fetchProduct =async ({id}) =>{
         
         try{
-            const data = await axios.get(`https://backend-photos.herokuapp.com/api/mynotes/product/${p._id}`);
+            const data = await axios.get(`https://backend-photos.herokuapp.com/api/mynotes/product/${id}`);
             //const data  =await res.json();
             const response= await data.response;
             console.log(data);

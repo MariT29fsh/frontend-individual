@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Unique from './Uniquecard';
 
 const Card = ({image, productTitle, prodDescrip,prodLink}) => {
   return (
@@ -15,7 +16,11 @@ const Card = ({image, productTitle, prodDescrip,prodLink}) => {
                         <h6>{prodDescrip}</h6>
                     </div>
                     <button  type="submit" className="btn btn-primary btn-block mb-4">Create</button>
-                    <Link to={prodLink}><h6>Delete</h6></Link>
+                    
+                    <Link to={prodLink}><h6><Unique id={prodLink}>
+
+</Unique></h6></Link>
+                    
                    
                 </div>
             </div>
