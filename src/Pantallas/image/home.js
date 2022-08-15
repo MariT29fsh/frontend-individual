@@ -35,7 +35,7 @@ const Home = () => {
 
     useEffect(()=>{
         fetchProduct();
-   });
+   },[]);
     //filter product
     const filterProduct = (e) =>{
         e.preventDefault();
