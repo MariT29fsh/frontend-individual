@@ -70,13 +70,13 @@ const Home = () => {
                    <div className="col-sm-9">
                      <div className="row">
                             {
-                                (products.data || []).map((p) =>(                               // products.map((p,key)=>(
+                                (products.data || []).map((p,key) =>(                               // products.map((p,key)=>(
                                      //image ={"https://res.cloudinary.com/dmc99lkmj/image/upload/v1660284117/notes/c1b9di6wfv84f2ekeu9w.jpg"}
                                      /*{(getNotes.data || []).map((note: any) => (
         <NoteCard key={note._id} note={note} />
         ))}*/
                                     <Card
-                                    image={p.image}
+                                    image={p.image.url}
                                     productTitle={p.title} 
                                      prodLink={`/product/${p._id}`} 
                                      prodDescrip={p.description}/>
